@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1f242d;
+    color: #fff;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: #323946;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0ef;
+}
+
+.navbar a {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #0ef;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10rem 5%;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    color: #0ef;
+}
+
+.home-img img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0ef;
+    color: #000;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2rem;
+    margin: 50px 0;
+}
+
+.skills, .experience, .projects, .contact {
+    padding: 5% 10%;
+}
+
+.skills ul, .projects ul, .experience ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.skills ul li, .projects ul li, .experience ul li {
+    padding: 10px;
+    background: #323946;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-img img {
+        margin-top: 20px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+}
